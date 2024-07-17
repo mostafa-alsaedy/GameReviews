@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Reviews</title>
+    <link rel="icon" href="./imgs/siteLogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-dark">
+
+
+    
+    <main>
+        <!--!====> Loading Spinner <====-->
+        <div class="loading d-none">
+            <span class="loader"></span>
+        </div>
+
+
+        <!--!====>  Logo + NavBar <====-->
+        <div class="logo text-center d-flex justify-content-center align-items-center py-5">
+            <img src="imgs/siteLogo.png" alt="Website Logo" class="">
+            <h1 class="text-white-50">Game Reviews </h1>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark m-auto position-sticky top-0 sticky-top z-3 bg-dark rounded-5 ">
+            <div class="container">
+                <a class="navbar-brand me-0" href="#"><img src="/imgs/siteLogo.png" class="w-50" alt="Navbar Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav m-auto ms-0 ps-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">MMORPG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--!====> Game Cards <====-->
+        <section class="content mt-5" id="displayGames">
+            <div class="container">
+                <div class="row gy-5" id="gameData">
+                    <!-- <div class="col-md-3">
+                    <div data-id="200" class="card bg-dark text-white">
+                        <div class="card-body pb-0">
+                            <img src="imgs/car.jpg" alt="" class="img-fluid pb-2">
+                            <div class="d-flex justify-content-between align-items-center py-1">
+                                <p>Hello World</p>
+                                <p class="bg-primary p-1 px-2 rounded">Free</p>
+                            </div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, sequi!</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between align-items-center pb-0">
+                            <p class="bg-secondary p-1 px-2 rounded">genre</p>
+                            <p class="bg-secondary p-1 px-2 rounded">platform</p>
+                        </div>
+                    </div>
+                </div> -->
+                </div>
+            </div>
+        </section>
+
+
+        <!--!====> Game Details <====-->
+        <section class="details d-none z-3 py-3">
+            <div class="container">
+                <header class="logo hstack justify-content-between">
+                    <h1 class="text-center fs-2 py-4 text-white">Game Details</h1>
+                    <button class="btn-close btn-close-white" id="btnClose"></button>
+                </header>
+                <div class="row g-4" id="detailsContent">
+                    <!-- <div class="col-md-4">
+                    <img src="./imgs/car.jpg" class="w-100" alt="image details" />
+                </div>
+                <div class="col-md-8 text-white">
+                    <h3 class="mainFont">Title: ${data.title}</h3>
+                    <p class="mainFont">Category: <span class="badge text-bg-info "> ${data.genre}</span> </p>
+                    <p class="mainFont">Platform: <span class="badge text-bg-info "> ${data.platform}</span> </p>
+                    <p class="mainFont">Status: <span class="badge text-bg-info "> ${data.status}</span> </p>
+                    <p class="small">${data.description}</p>
+                    <a class="btn btn-outline-warning" target="_blank" href="${data.game_url}">Show Game</a>
+                </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+    <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+</body>
+
+</html>

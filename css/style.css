@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.mainFont {
+    font-family: 'Marcellus SC', serif;
+}
+
+body {
+    background-image: url(../imgs/mainBG.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.logo h1 {
+    font-family: 'Marcellus SC', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+nav {
+    width: fit-content;
+    font-family: 'Marcellus SC', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+@media (max-width: 992px) {
+.navbar-nav {
+    text-align: center;
+}
+nav {
+    width: 65%;
+}
+}
+
+.active {
+    color: rgb(2, 2, 39);
+}
+
+.btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.card {
+    cursor: pointer;
+    transition: 0.4s all;
+    filter: grayscale(50%);
+}
+
+.card:hover {
+    scale: 1.03;
+    transition: 0.4s;
+    filter: grayscale(0%);
+
+}
+
+
+.loader {
+    height: 5px;
+    width: 5px;
+    color: #fff;
+    box-shadow: -10px -10px 0 5px,
+        -10px -10px 0 5px,
+        -10px -10px 0 5px,
+        -10px -10px 0 5px;
+    animation: loader-38 6s infinite;
+}
+
+@keyframes loader-38 {
+    0% {
+        box-shadow: -10px -10px 0 5px,
+            -10px -10px 0 5px,
+            -10px -10px 0 5px,
+            -10px -10px 0 5px;
+    }
+
+    8.33% {
+        box-shadow: -10px -10px 0 5px,
+            10px -10px 0 5px,
+            10px -10px 0 5px,
+            10px -10px 0 5px;
+    }
+
+    16.66% {
+        box-shadow: -10px -10px 0 5px,
+            10px -10px 0 5px,
+            10px 10px 0 5px,
+            10px 10px 0 5px;
+    }
+
+    24.99% {
+        box-shadow: -10px -10px 0 5px,
+            10px -10px 0 5px,
+            10px 10px 0 5px,
+            -10px 10px 0 5px;
+    }
+
+    33.32% {
+        box-shadow: -10px -10px 0 5px,
+            10px -10px 0 5px,
+            10px 10px 0 5px,
+            -10px -10px 0 5px;
+    }
+
+    41.65% {
+        box-shadow: 10px -10px 0 5px,
+            10px -10px 0 5px,
+            10px 10px 0 5px,
+            10px -10px 0 5px;
+    }
+
+    49.98% {
+        box-shadow: 10px 10px 0 5px,
+            10px 10px 0 5px,
+            10px 10px 0 5px,
+            10px 10px 0 5px;
+    }
+
+    58.31% {
+        box-shadow: -10px 10px 0 5px,
+            -10px 10px 0 5px,
+            10px 10px 0 5px,
+            -10px 10px 0 5px;
+    }
+
+    66.64% {
+        box-shadow: -10px -10px 0 5px,
+            -10px -10px 0 5px,
+            10px 10px 0 5px,
+            -10px 10px 0 5px;
+    }
+
+    74.97% {
+        box-shadow: -10px -10px 0 5px,
+            10px -10px 0 5px,
+            10px 10px 0 5px,
+            -10px 10px 0 5px;
+    }
+
+    83.3% {
+        box-shadow: -10px -10px 0 5px,
+            10px 10px 0 5px,
+            10px 10px 0 5px,
+            -10px 10px 0 5px;
+    }
+
+    91.63% {
+        box-shadow: -10px -10px 0 5px,
+            -10px 10px 0 5px,
+            -10px 10px 0 5px,
+            -10px 10px 0 5px;
+    }
+
+    100% {
+        box-shadow: -10px -10px 0 5px,
+            -10px -10px 0 5px,
+            -10px -10px 0 5px,
+            -10px -10px 0 5px;
+    }
+}
+
+.loading {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: #272b30e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details {
+    background-color: #272729be;
+    backdrop-filter: blur(4px);
+    min-height: 100vh;
+}
